@@ -1582,3 +1582,68 @@ section:nth-of-type(even) {
         align-self: flex-start;
     }
 }
+
+
+/* ==================================================
+   3D SHOWCASE — MULTI-MODEL TABS
+================================================== */
+
+.showcase-tabs {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 2px 2px 10px;
+    margin-bottom: 18px;
+    scrollbar-width: thin;
+    scrollbar-color: var(--accent) transparent;
+}
+
+.showcase-tabs::-webkit-scrollbar {
+    height: 6px;
+}
+
+.showcase-tabs::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.showcase-tabs::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    border-radius: 99px;
+}
+
+.showcase-tabs button {
+    flex: 0 0 auto;
+    white-space: nowrap;
+}
+
+.model-file-link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--accent);
+    font-size: 0.78rem;
+    font-family: monospace;
+    text-decoration: none;
+}
+
+.model-file-link:hover {
+    text-decoration: underline;
+}
+
+.model-error {
+    line-height: 1.55;
+}
+
+@media (max-width: 600px) {
+    .showcase-tabs {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .showcase-tabs button {
+        flex: 0 0 auto;
+        width: auto;
+    }
+}
