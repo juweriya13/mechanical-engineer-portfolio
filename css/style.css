@@ -275,279 +275,525 @@ section:nth-of-type(even) {
 
 
 /* ==================================================
-   ABOUT
+   ABOUT — COMPACT, POLISHED, PRODUCTION LAYOUT
 ================================================== */
 
-.about-title em {
-    color: var(--accent);
-    font-style: normal;
+#about {
+    padding-top: 72px;
+    padding-bottom: 64px;
 }
 
-.about-content {
-    max-width: 880px;
+#about .about-title {
+    margin-bottom: 24px;
 }
 
-.about-content p {
-    margin-bottom: 18px;
-    color: var(--muted);
+#about .about-content {
+    max-width: 900px;
 }
 
-
-/* ==================================================
-   ABOUT STAT CARDS
-================================================== */
-
-.about-stats {
-    display: grid;
-    grid-template-columns: minmax(150px, 0.78fr) minmax(280px, 1.11fr) minmax(260px, 1.11fr);
-    gap: 16px;
-    margin-top: 34px;
-    align-items: stretch;
-}
-
-.compact-stat {
-    min-height: 154px;
-    padding: 20px 18px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    text-align: center;
-    box-shadow: none;
-}
-
-.compact-stat:hover {
-    transform: none;
-    border-color: var(--border);
-}
-
-.compact-stat h3 {
-    margin-bottom: 5px;
-    color: var(--accent);
-    font-size: 2rem;
-    line-height: 1.1;
-    font-weight: 800;
-}
-
-.compact-stat p {
-    margin-bottom: 0;
-    color: var(--muted);
-    font-size: 0.86rem;
-}
-
-.stat-tools-card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.sws {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 14px;
-}
-
-.sw {
-    width: 58px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
-}
-
-.sw span {
-    color: var(--muted);
-    font-size: 0.64rem;
-    line-height: 1.15;
-    text-align: center;
-}
-
-.lg {
-    width: 40px;
-    height: 40px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: Arial, sans-serif;
-    font-weight: 800;
-    font-size: 17px;
-}
-
-.l-sw { background: #d0202a; font-size: 15px; }
-.l-ca { background: #0a3a8f; font-size: 8px; letter-spacing: 0.02em; }
-.l-ac { background: #c5202b; font-size: 22px; }
-.l-cr { background: #4b5563; font-size: 10px; font-weight: 600; }
-.l-rv { background: #1f6fd0; font-size: 21px; }
-.l-ol { background: #0f6cbd; }
-.l-pp { background: #d24726; }
-.l-xl { background: #1d7044; }
-.l-wd { background: #2b579a; }
-
-
-/* ==================================================
-   WHAT I DO — INSIDE ABOUT
-================================================== */
-
-.what-i-do {
-    margin-top: 54px;
-    padding-top: 34px;
-    border-top: 1px solid var(--border);
-}
-
-.what-i-do-heading {
-    display: flex;
-    align-items: baseline;
-    gap: 12px;
-    margin-bottom: 22px;
-}
-
-.what-i-do-heading span {
-    color: var(--accent);
-    font: 700 0.72rem/1 monospace;
-    letter-spacing: 0.16em;
-}
-
-.what-i-do-heading h3 {
+#about .about-content p {
     margin: 0;
-    font-size: 1.45rem;
-}
-
-.what-i-do-grid {
-    display: grid;
-    grid-template-columns: repeat(4, minmax(0, 1fr));
-    gap: 14px;
-}
-
-.what-i-do-card {
-    display: flex;
-    flex-direction: column;
-    min-height: 220px;
-    padding: 22px 20px;
-    background: var(--bg);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    transition: transform 0.3s ease, border-color 0.3s ease, background 0.3s ease;
-}
-
-.what-i-do-card:hover {
-    transform: translateY(-4px);
-    border-color: var(--accent);
-    background: var(--bg2);
-}
-
-.what-i-do-card svg {
-    width: 34px;
-    height: 34px;
-    margin-bottom: 18px;
-    stroke: var(--accent);
-    fill: none;
-    stroke-width: 1.7;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-}
-
-.what-i-do-card h4 {
-    margin-bottom: 9px;
-    font-size: 1rem;
-    line-height: 1.35;
-}
-
-.what-i-do-card p {
     color: var(--muted);
-    font-size: 0.87rem;
+    font-size: 0.98rem;
     line-height: 1.65;
 }
 
 
 /* ==================================================
-   SOFTWARE
+   ABOUT — EXPERIENCE / TOOL SUMMARY
 ================================================== */
 
-.tools-grid {
+#about .about-stats {
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
-    gap: 18px;
+    grid-template-columns: 0.82fr 1.5fr 1.35fr;
+    gap: 16px;
+    margin-top: 22px;
+    align-items: stretch;
 }
 
-.tool-card {
-    position: relative;
-    min-height: 245px;
-    padding: 26px 18px 24px;
+#about .stat-card {
+    min-height: 154px;
+    padding: 18px 16px;
+
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    text-align: center;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
-    overflow: hidden;
+
+    transition:
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
-.tool-card::after {
-    content: "";
-    position: absolute;
-    left: 22px;
-    right: 22px;
-    bottom: 0;
-    height: 2px;
-    background: var(--accent);
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.3s ease;
+#about .stat-card:hover {
+    border-color: var(--accent);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.16);
 }
 
-.tool-card:hover::after {
-    transform: scaleX(1);
-}
-
-.software-logo-wrap {
-    width: 82px;
-    height: 82px;
-    margin-bottom: 21px;
-    display: grid;
-    place-items: center;
-    border-radius: 20px;
-    background: var(--bg2);
-    border: 1px solid var(--border);
-    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.20);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-}
-
-.tool-card:hover .software-logo-wrap {
-    transform: translateY(-4px);
-    border-color: rgba(255, 122, 26, 0.35);
-    box-shadow: 0 18px 36px rgba(0, 0, 0, 0.27);
-}
-
-.software-logo {
-    width: 100%;
-    height: 100%;
-    display: block;
-    object-fit: cover;
-}
-
-.tool-card h3 {
-    margin-bottom: 8px;
-    font-size: 1.05rem;
-}
-
-.tool-card p {
-    margin: 0;
+#about .stat-card h3 {
+    margin: 0 0 4px;
     color: var(--accent);
-    font-size: 0.94rem;
-    font-weight: 700;
+    font-size: 2.35rem;
+    line-height: 1;
+    font-weight: 800;
 }
+
+#about .stat-card > p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.88rem;
+    line-height: 1.3;
+}
+
+
+/* ==================================================
+   ABOUT — TOOL ICON ROWS
+================================================== */
+
+#about .sws {
+    width: 100%;
+    margin-top: 11px;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: nowrap;
+    gap: 9px;
+}
+
+#about .sw {
+    width: 54px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+#about .sw span {
+    color: var(--muted);
+    font-size: 9px;
+    line-height: 1.1;
+    white-space: nowrap;
+}
+
+#about .lg {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 9px;
+
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+}
+
+
+/* CAD */
+
+#about .l-sw {
+    background: #d0202a;
+    font-size: 15px;
+}
+
+#about .l-ca {
+    background: #0a3a8f;
+    font-size: 8px;
+}
+
+#about .l-ac {
+    background: #c5202b;
+    font-size: 22px;
+}
+
+#about .l-cr {
+    background: #4b5563;
+    font-size: 10px;
+}
+
+#about .l-rv {
+    background: #1f6fd0;
+    font-size: 20px;
+}
+
+
+/* Office */
+
+#about .l-ol {
+    background: #0f6cbd;
+}
+
+#about .l-pp {
+    background: #d24726;
+}
+
+#about .l-xl {
+    background: #1d7044;
+}
+
+#about .l-wd {
+    background: #2b579a;
+}
+
+
+/* ==================================================
+   ABOUT — WHAT I DO
+================================================== */
+
+#about .what-i-do {
+    margin-top: 38px;
+}
+
+#about .what-i-do-heading {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 17px;
+}
+
+#about .what-i-do-heading span {
+    color: var(--accent);
+    font: 700 0.74rem/1 monospace;
+    letter-spacing: 0.16em;
+}
+
+#about .what-i-do-heading h3 {
+    margin: 0;
+    font-size: 1.55rem;
+    line-height: 1.2;
+}
+
+
+/*
+   IMPORTANT:
+   The actual HTML uses .what-i-do-card.
+   Do not target .card here.
+*/
+
+#about .what-i-do-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 14px;
+}
+
+#about .what-i-do-card {
+    min-height: 158px;
+    padding: 18px 17px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    color: var(--text);
+    text-decoration: none;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        background 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#about .what-i-do-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    background: #0d131b;
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
+}
+
+#about .what-i-do-card svg {
+    width: 31px;
+    height: 31px;
+
+    margin-bottom: 11px;
+
+    flex: none;
+
+    fill: none;
+    stroke: var(--accent);
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+#about .what-i-do-card h4 {
+    margin: 0 0 6px;
+
+    font-size: 0.96rem;
+    line-height: 1.2;
+    font-weight: 750;
+}
+
+#about .what-i-do-card p {
+    margin: 0;
+
+    color: var(--muted);
+    font-size: 0.82rem;
+    line-height: 1.45;
+}
+
+
+/* ==================================================
+   ABOUT — RESPONSIVE
+================================================== */
 
 @media (max-width: 1050px) {
 
-    .tools-grid {
-        grid-template-columns: repeat(3, minmax(0, 1fr));
+    #about .about-stats {
+        grid-template-columns:
+            repeat(3, minmax(0, 1fr));
+        gap: 13px;
     }
+
+    #about .sws {
+        gap: 7px;
+    }
+
+    #about .sw {
+        width: 48px;
+    }
+
+    #about .lg {
+        width: 36px;
+        height: 36px;
+    }
+
+    #about .what-i-do-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
 }
 
+
+@media (max-width: 860px) {
+
+    #about {
+        padding-top: 66px;
+        padding-bottom: 58px;
+    }
+
+    #about .stat-card {
+        min-height: 150px;
+        padding: 17px 12px;
+    }
+
+    #about .what-i-do {
+        margin-top: 34px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #about {
+        padding-top: 60px;
+        padding-bottom: 54px;
+    }
+
+    #about .about-title {
+        margin-bottom: 20px;
+    }
+
+    #about .about-content p {
+        font-size: 0.92rem;
+    }
+
+    #about .about-stats {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+    #about .stat-card {
+        min-height: 138px;
+    }
+
+    #about .sws {
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    #about .what-i-do {
+        margin-top: 31px;
+    }
+
+    #about .what-i-do-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    #about .what-i-do-card {
+        min-height: 150px;
+    }
+
+}
+
+
+@media (max-width: 420px) {
+
+    #about .stat-card h3 {
+        font-size: 2.15rem;
+    }
+
+    #about .lg {
+        width: 35px;
+        height: 35px;
+    }
+
+    #about .what-i-do-card {
+        min-height: 145px;
+    }
+
+}
+
+
+/* ==================================================
+   SOFTWARE — ELEGANT 3 × 2 LAYOUT
+================================================== */
+
+#software {
+    padding-top: 68px;
+    padding-bottom: 72px;
+}
+
+#software .section-title {
+    margin-bottom: 28px;
+}
+
+#software .tools-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    align-items: stretch;
+}
+
+#software .tool-card {
+    min-height: 190px;
+    padding: 20px 18px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    border-radius: 16px;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#software .tool-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+    box-shadow:
+        0 14px 32px rgba(0, 0, 0, 0.18);
+}
+
+#software .software-logo-wrap {
+    width: 68px;
+    height: 68px;
+
+    margin-bottom: 11px;
+
+    display: grid;
+    place-items: center;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 15px;
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(255, 255, 255, 0.045),
+            transparent 65%
+        );
+}
+
+#software .software-logo {
+    width: 58px;
+    height: 58px;
+
+    object-fit: contain;
+
+    transition:
+        transform 0.25s ease;
+}
+
+#software .tool-card:hover .software-logo {
+    transform: scale(1.05);
+}
+
+#software .tool-card h3 {
+    margin: 0 0 5px;
+
+    font-size: 1rem;
+    line-height: 1.2;
+}
+
+#software .tool-card p {
+    margin: 0;
+
+    color: var(--accent);
+    font-size: 0.88rem;
+    font-weight: 700;
+}
+
+
+/* ==================================================
+   SOFTWARE — RESPONSIVE
+================================================== */
+
+@media (max-width: 1050px) {
+
+    #software .tools-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #software {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    #software .tools-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+
+    #software .tool-card {
+        min-height: 170px;
+    }
+
+}
 /* ==================================================
    3D SHOWCASE
 ================================================== */
