@@ -546,12 +546,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 false
         },
 
-        shaftSleeve: {
+        engineHead: {
             name:
-                "Shaft Sleeve",
+                "Engine Head",
 
             file:
-                "assets/models/6.SHAFT_SLEEVE.glb",
+                "assets/models/22091871 Engine Head.glb",
 
             type:
                 "glb",
@@ -579,38 +579,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Cardan Shaft",
 
             file:
-                "assets/models/Cardan Shaft.glb",
+                "assets/models/Double Cardan Shaft.glb",
 
             type:
                 "glb",
-
-            exploded:
-                false
-        },
-
-        rubberDuct: {
-            name:
-                "Rubber Duct",
-
-            file:
-                "assets/models/aw_rubber_duct.glb",
-
-            type:
-                "glb",
-
-            exploded:
-                false
-        },
-
-        circularPattern: {
-            name:
-                "Circular Pattern",
-
-            file:
-                "assets/models/Circular Pattern1.sab",
-
-            type:
-                "sab",
 
             exploded:
                 false
